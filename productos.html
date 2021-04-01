@@ -230,11 +230,42 @@
         border-color: transparent;
         color: #fff !important;
     }
+    .modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+
+
+    .modal-body {
+      position:relative;
+      padding:0px;
+      min-height:400px;
+      background:#ccc;
+    }
+
+
+
+
+    .close {
+      position:absolute;
+      right:-30px;
+      top:0;
+      z-index:999;
+      font-size:2rem;
+      font-weight: normal;
+      color:#fff;
+      opacity:1;
+    }
+
+    #image {
+      min-height:200px;
+    }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-expand-sm bg-light fixed-top ">
+    <nav class="navbar navbar-expand-sm bg-light  ">
          <!-- Brand/logo -->
       <a class="navbar-brand" href="#">
         <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
@@ -252,192 +283,88 @@
       </ul>
     </nav>
 
-    <div class="jumbotron text-center" id='creativos-jt'>
-      <br>
-      <br>
-      <br>
-      <img class="logo1" src="images/LOGO CREATIVOS 1 TINTA.png" width="280" height="82" alt=""/>
-        <br>
-        <br>
-      <div class='row'>
-          <div class='col'>
-              <a href="#contacto"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/LOGOclean.png';" src="images/LOGOclean.png" /></a>
-              <h2>Contacto</h2>
-          </div>
-          <div class='col'>
-              <a href="contacto.html"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/LOGOclean.png';"  src="images/LOGOclean.png" /></a>
-              <h2>Productos</h2>
-          </div>
-          <div class='col'>
-              <a href="contacto.html"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/LOGOclean.png';"  src="images/LOGOclean.png" /></a>
-              <h2>Lista de Precios</h2>
-          </div>
-      </div>
-    </div>
-
-    <div id="productos" class="container-fluid text-center">
-      <h1 style="background-color:#ff00ff; color:#fff;">PRODUCTOS</h1>
-
-      <br>
-      <div class="row ">
-        <div class="col">
-          <a href="productos.html">
-            <img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
-
-          </a>
-          <h3 >Sublimado</h3>
-        </div>
-
-        <div class="col">
-          <a href="productos.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
-
-          </a>
-          <h3>Gran formato</h3>
-
-        </div>
-
-        <div class="col">
-          <a href="productos.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
-
-          </a>
-          <h3>Offset</h3>
-
-        </div>
-
-        <div class="col">
-          <a href="productos.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
-
-          </a>
-          <h3>Extras</h3>
-
-        </div>
-
-      </div>
-    </div>
-
-<!-- Container (About Section) -->
-    <div id="contacto" class="container-fluid text-center">
-        <h1 style="background-color:#0080ff; color:#fff;">CONTACTO</h1>
-        <br>
-        <br>
-        <br>
 
 
-        <div class="row ">
-          <div class="col-sm-4">
 
-            <a href="#quien"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/LOGOclean.png';" src="images/LOGOclean.png" /></a>
-            <h2>Quienes somos</h2>
-          </div>
 
-          <div class="col-sm-4">
-
-            <a href="#redes"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/LOGOclean.png';"  src="images/LOGOclean.png" /></a>
-            <h2>Redes Sociales</h2>
-          </div>
-          <div class="col-sm-4">
-
-            <a href="#sucursales"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/LOGOclean.png';"  src="images/LOGOclean.png" /></a>
-            <h2>Sucursales</h2>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-    </div>
-
-<div class="container-fluid bg-grey" id='quien'>
+<div class="container-fluid bg-grey text-center" >
+  <h1 style="background-color:#ff00ff; color:#fff;">PRODUCTOS</h1>
   <div class="row">
-
-    <div class="col">
-      <h2>Quienes somos</h2><br>
-      <div class='row'>
-            <div class="span4">
-              <div class="content-heading">
-                  <img  class="float-left" src="images/LOGOclean.png" height='100px' width='100px'/>
-              </div>
-                <h4>Misión</h4>
-                  <p >
-                      Somos una empresa de máxima confianza para nuestros clientes, capaces
-                        de ofrecer las estrategias necesarias para conseguir sus objetivos a través
-                        de nuestra experiencia.
-                  </p>
-
-            </div>
-        </div>
-
-         <div class='row'>
-            <div class="span4">
-              <div class="content-heading">
-                  <img  class="float-left" src="images/LOGOclean.png" height='100px' width='100px'/>
-              </div>
-                <h4>Visión</h4>
-                  <p >
-                      Somos una empresa de máxima confianza para nuestros clientes, capaces
-                        de ofrecer las estrategias necesarias para conseguir sus objetivos a través
-                        de nuestra experiencia.
-                  </p>
-
-            </div>
-        </div>
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/1.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/1.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
+    </div>
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/2.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/2.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
     </div>
   </div>
-</div>
-<div class="container-fluid bg-grey" id='redes'>
-  <h2>Redes Sociales</h2>
-  <div class="row text-center">
-				<div class="col">
-          <a href="https://www.facebook.com/PublicidadCreativosPuebla">
-            <img alt="Facebook" height="50" width='auto' onmouseout="this.src='images/redes-sociales/fblogo.png';" onmouseover="this.src='images/redes-sociales/fblogo.png';" src="images/redes-sociales/fblogo.png" />
-            <h3 >Facebook</h3>
-          </a>
-
-
-        </div>
-        <div class="col">
-          <a href="https://www.instagram.com/publicidad_creativos/">
-            <img alt="Cambiar imagen"  height="50" width='auto' onmouseout="this.src='images/redes-sociales/instagramlogo.png';" onmouseover="this.src='images/redes-sociales/instagramlogo.png';" src="images/redes-sociales/instagramlogo.png" />
-            <h3>Instagram</h3>
-          </a>
-
-
-        </div>
-	</div>
-</div>
-<div class="container-fluid bg-grey" id='sucursales'>
-  <h2>Sucursales</h2>
+  <br>
   <div class="row">
-				<div class="col">
-							<div class='direccion' onclick="cambioDir1()" style="background-color:#fff">
-								<a href='#sucursales' style="color: #00b33c;">
-									<strong>SUCURSAL ZAVALETA</strong> <br> -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G,
-									Col. Ex Hacienda Concepción Buena Vista, C.P. 72170.
-									-Teléfonos de Oficina: 222.503.52.69 / 70  WhatsApp: 222 128 6395
-									-Correo: publicidadcreativoszavaleta@outlook.com
-								</a>
-							</div>
-              <br>
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/3.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/3.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
+    </div>
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/4.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/4.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/5.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/5.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
+    </div>
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/6.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/6.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/7.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/7.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
+    </div>
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/8.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/8.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col gallery-col">
+      <img src="images/productos/EXTRAS/9.jpg"
+      alt="" data-toggle="modal"
+      data-bigimage="images/productos/EXTRAS/9.jpg"
+      data-target="#myModal" class="img-fluid" width="300px" height="auto">
+    </div>
+    <div class="col gallery-col">
 
-							<div class='direccion' onclick="cambioDir2()" style="background-color:#fff">
-								<a href='#sucursales' style="color: #00b33c;">
-									<strong>SUCURSAL FORJADORES</strong> <br>  -Dirección: Blvd. Forjadores de Puebla #1715,
-									Santiago Momoxpan, C.P. 72700, Cholula, Puebla.
-									-Teléfono de Oficina: (222) 7.62.22.73  WhatsApp: 221 156 4111
-									-Correo: publicidadcreativos@hotmail.com
-								</a>
-							</div>
-				</div>
+    </div>
+  </div>
 
-				<div class="col">
-					<iframe id="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63932.15702580432!2d-98.26631972220883!3d19.041957558909957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc703005b7557%3A0x50a1a0af66d6dcf9!2sPlaza%20Santa%20Fe!5e0!3m2!1ses-419!2smx!4v1615923888174!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-				</div>
-	  </div>
+
 </div>
 
-
-
-<!-- Container (Services Section) -->
 
 
 
@@ -461,6 +388,33 @@
 
     </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+                <img src="//media.tenor.com/images/556e9ff845b7dd0c62dcdbbb00babb4b/tenor.gif" alt="" id="image" class="img-fluid">
+
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
 
 <script>
 $(document).ready(function(){
@@ -505,6 +459,45 @@ $(document).ready(function(){
 				function cambioDir2() {
 				  document.getElementById("myFrame").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.714706350912!2d-98.28140538578731!3d19.076277156922583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc77608cb6519%3A0x35f30630d1d599c!2sBlvd.%20Forjadores%20de%20Puebla%201715%2C%20Santiago%20Momoxpan%2C%20Geovillas%20el%20Campanario%20Secc%20II%2C%2072760%20Puebla%2C%20Pue.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1615935747908!5m2!1ses-419!2sus" ;
 				}
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  // Gets the video src from the data-src on each button
+  var $imageSrc;
+  $('.gallery-col img').click(function() {
+      $imageSrc = $(this).data('bigimage');
+  });
+  console.log($imageSrc);
+
+
+
+  // when the modal is opened autoplay it
+  $('#myModal').on('shown.bs.modal', function (e) {
+
+  // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+
+  $("#image").attr('src', $imageSrc  );
+  })
+
+
+  // reset the modal image
+  $('#myModal').on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      $("#image").attr('src','');
+  })
+
+
+
+
+
+
+  // document ready
+  });
+
+
+
 </script>
 
 </body>
