@@ -1,8 +1,15 @@
+<?php
+    $filepath = "images/productos/SUBLIMACION GORRA TIPO TRUCKER INFANTIL/";
+    $array = preg_grep('~\.(jpg)$~', scandir($filepath));
+    $num = count($array);
+	$i = 0;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com -->
-  <title>Bootstrap Theme Company Page</title>
+  <title> publicidad creativos | Gorra Tipo Trucker Infantil</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
@@ -273,7 +280,7 @@
 
     <nav class="navbar navbar-expand-sm bg-light  ">
          <!-- Brand/logo -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
       </a>
       <ul class="navbar-nav ml-auto">
@@ -294,79 +301,52 @@
 
 
 <div class="container-fluid bg-grey text-center" >
-  <h1 style="background-color:#ff00a6; color:#fff;">PRODUCTOS</h1>
-  <!-- Aqui va la parte de las imagenes-->
-  <div class="row">
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/1.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/1.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/2.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/2.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/3.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/3.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/4.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/4.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/5.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/5.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/6.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/6.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/7.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/7.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/8.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/8.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col gallery-col">
-      <img src="images/productos/EXTRAS/9.jpg"
-      alt="" data-toggle="modal"
-      data-bigimage="images/productos/EXTRAS/9.jpg"
-      data-target="#myModal" class="img-fluid" width="300px" height="auto">
-    </div>
-    <div class="col gallery-col">
+    <h1 style="background-color:#ff00a6; color:#fff;">GORRA TIPO TRUCKER INFANTIL</h1>
+    <!--AQUI VAN LAS IMAGENES-->
 
+    <?php foreach ($array as $x ) : ?>
+      <?php
+        $i++;
+        $mod = $i%2;
+      ?>
+      <?php if($mod == 1): ?>
+        <div class="row">
+          <div class="col gallery-col">
+            <img src="<?php echo($filepath.$x) ?>"
+            alt="" data-toggle="modal"
+            data-bigimage="<?php echo($filepath.$x) ?>"
+            data-target="#myModal" class="img-fluid" width="300px" height="auto">
+          </div>
+      <?php else: ?>
+          <div class="col gallery-col">
+            <img src="<?php echo($filepath.$x) ?>"
+            alt="" data-toggle="modal"
+            data-bigimage="<?php echo($filepath.$x) ?>"
+            data-target="#myModal" class="img-fluid" width="300px" height="auto">
+          </div>
+        </div>
+        <br>
+      <?php endif; ?>
+
+    <?php endforeach; ?>
+
+    <?php
+      $mod2 = $i%2;
+      if($mod2 == 1):
+    ?>
+      <div class="col gallery-col">
+
+
+      </div>
     </div>
-  </div>
+    <br>
+    <?php endif; ?>
+
+
+
+
+
+
 
 
 
