@@ -299,11 +299,13 @@
 
           </div>
         </li>
-        <li class="nav-item dropdown">
+       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" style='font-size:10px;' href="productos.html">Extras</a>
-
+            <a class="dropdown-item" style='font-size:10px;' href="productos1.html">Gran Formato</a>
+            <a class="dropdown-item" style='font-size:10px;' href="productos2.html">Offset</a>
+            <a class="dropdown-item" style='font-size:10px;' href="productos3.html">Sublimacion</a>
           </div>
         </li>
       </ul>
