@@ -1,15 +1,8 @@
-<?php
-    $filepath = "images/productos/SUBLIMACION ACERO INOXIDABLE/";
-    $array = preg_grep('~\.(jpg)$~', scandir($filepath));
-    $num = count($array);
-	$i = 0;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com -->
-  <title> publicidad creativos | Acero Inoxidable</title>
+  <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
@@ -216,7 +209,7 @@
     .navbar {
         margin-bottom: 0;
         width: 100%;
-        height: 10%;
+        height: 10vh;
         background: url("./images/ejemplo.jpg");
         z-index: 9999;
         border: 0;
@@ -237,129 +230,106 @@
         border-color: transparent;
         color: #fff !important;
     }
-   .modal-dialog {
-      max-width: 400px;
-      margin: 30px auto;
-    }
-
-
-
-    .modal-body {
-      position:relative;
-      padding:0px;
-      min-height:400px;
-      background:#ccc;
-    }
-
-
-
-
-    .close {
-      position:absolute;
-      right:-30px;
-      top:0;
-      z-index:999;
-      font-size:2rem;
-      font-weight: normal;
-      color:#fff;
-      opacity:1;
-    }
-     .modal-backdrop {
-    z-index: 100000 !important;
-  }
-
-  .modal {
-    z-index: 100001 !important;
-  }
-    #image {
-      min-height:200px;
-    }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-expand-sm bg-light  ">
-         <!-- Brand/logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
-      </a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="quienes-somos.html">¿Quiénes somos?</a>
-            <a class="dropdown-item" href="sucursales.html">Sucursales</a>
-
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="productos.html">Extras</a>
-
-          </div>
-        </li>
-      </ul>
-    </nav>
+  <nav class="navbar navbar-expand-sm bg-light  ">
+       <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+      <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
+    </a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Lista de Precios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Productos</a>
+      </li>
+    </ul>
+  </nav>
 
 
 
+  <div class="container-fluid bg-grey" id='quien'>
+    <div class="row">
 
-<div class="container-fluid bg-grey text-center" >
-    <h1 style="background-color:#ff00a6; color:#fff;">ACERO INOXIDABLE</h1>
-    <!--AQUI VAN LAS IMAGENES-->
-
-    <?php foreach ($array as $x ) : ?>
-      <?php
-        $i++;
-        $mod = $i%2;
-      ?>
-      <?php if($mod == 1): ?>
-        <div class="row">
-          <div class="col gallery-col">
-            <img src="<?php echo($filepath.$x) ?>"
-            alt="" data-toggle="modal"
-            data-bigimage="<?php echo($filepath.$x) ?>"
-            data-target="#myModal" class="img-fluid" width="300px" height="auto">
-          </div>
-      <?php else: ?>
-          <div class="col gallery-col">
-            <img src="<?php echo($filepath.$x) ?>"
-            alt="" data-toggle="modal"
-            data-bigimage="<?php echo($filepath.$x) ?>"
-            data-target="#myModal" class="img-fluid" width="300px" height="auto">
-          </div>
-        </div>
+      <div class="col">
+        <h1 style="background-color:#0080ff; color:#fff;">¿QUIÉNES SOMOS?</h1>
         <br>
-      <?php endif; ?>
+        <div class='row'>
+              <div class="span4">
+                <div class="content-heading">
+                    <img  class="float-left" src="images/LOGOclean.png" height='100px' width='100px'/>
+                </div>
+                  <h4>Misión</h4>
+                    <p >
+                        Somos una empresa de máxima confianza para nuestros clientes, capaces
+                          de ofrecer las estrategias necesarias para conseguir sus objetivos a través
+                          de nuestra experiencia.
+                    </p>
 
-    <?php endforeach; ?>
+              </div>
+          </div>
 
-    <?php
-      $mod2 = $i%2;
-      if($mod2 == 1):
-    ?>
-      <div class="col gallery-col">
+           <div class='row'>
+              <div class="span4">
+                <div class="content-heading">
+                    <img  class="float-left" src="images/LOGOclean.png" height='100px' width='100px'/>
+                </div>
+                  <h4>Visión</h4>
+                    <p >
+                        Somos una empresa de máxima confianza para nuestros clientes, capaces
+                          de ofrecer las estrategias necesarias para conseguir sus objetivos a través
+                          de nuestra experiencia.
+                    </p>
 
-
+              </div>
+          </div>
       </div>
     </div>
-    <br>
-    <?php endif; ?>
+  </div>
 
 
+<div class="container-fluid bg-grey" id='redes'>
+  <h2>Redes Sociales</h2>
+  <div class="row text-center">
+				<div class="col">
+          <a href="https://www.facebook.com/PublicidadCreativosPuebla">
+            <img alt="Facebook" height="50" width='auto' onmouseout="this.src='images/redes-sociales/fblogo.png';" onmouseover="this.src='images/redes-sociales/fblogo.png';" src="images/redes-sociales/fblogo.png" />
+
+          </a>
+          <h3 >Facebook</h3>
 
 
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/publicidad_creativos/">
+            <img alt="Cambiar imagen"  height="50" width='auto' onmouseout="this.src='images/redes-sociales/instagramlogo.png';" onmouseover="this.src='images/redes-sociales/instagramlogo.png';" src="images/redes-sociales/instagramlogo.png" />
+
+          </a>
+          <h3>Instagram</h3>
 
 
+        </div>
+        <div class="col">
+          <a href="sucursales.html">
+            <img alt="Cambiar imagen"  height="50" width='auto' onmouseout="this.src='images/redes-sociales/maps.png';" onmouseover="this.src='images/redes-sociales/maps.png';" src="images/redes-sociales/maps.png" />
+
+          </a>
+          <h3>Sucursales</h3>
 
 
-
+        </div>
+	</div>
 </div>
 
+
+
+<!-- Container (Services Section) -->
 
 
 
@@ -383,33 +353,6 @@
 
     </div>
 </footer>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-
-      <div class="modal-body">
-
-       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-
-                <img src="//media.tenor.com/images/556e9ff845b7dd0c62dcdbbb00babb4b/tenor.gif" alt="" id="image" class="img-fluid">
-
-
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-</div>
-
 
 <script>
 $(document).ready(function(){
@@ -454,45 +397,6 @@ $(document).ready(function(){
 				function cambioDir2() {
 				  document.getElementById("myFrame").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.714706350912!2d-98.28140538578731!3d19.076277156922583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc77608cb6519%3A0x35f30630d1d599c!2sBlvd.%20Forjadores%20de%20Puebla%201715%2C%20Santiago%20Momoxpan%2C%20Geovillas%20el%20Campanario%20Secc%20II%2C%2072760%20Puebla%2C%20Pue.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1615935747908!5m2!1ses-419!2sus" ;
 				}
-</script>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-
-  // Gets the video src from the data-src on each button
-  var $imageSrc;
-  $('.gallery-col img').click(function() {
-      $imageSrc = $(this).data('bigimage');
-  });
-  console.log($imageSrc);
-
-
-
-  // when the modal is opened autoplay it
-  $('#myModal').on('shown.bs.modal', function (e) {
-
-  // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-
-  $("#image").attr('src', $imageSrc  );
-  })
-
-
-  // reset the modal image
-  $('#myModal').on('hide.bs.modal', function (e) {
-      // a poor man's stop video
-      $("#image").attr('src','');
-  })
-
-
-
-
-
-
-  // document ready
-  });
-
-
-
 </script>
 
 </body>

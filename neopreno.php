@@ -237,8 +237,8 @@
         border-color: transparent;
         color: #fff !important;
     }
-    .modal-dialog {
-      max-width: 800px;
+   .modal-dialog {
+      max-width: 400px;
       margin: 30px auto;
     }
 
@@ -285,17 +285,25 @@
       </a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Lista de Precios</a>
+          <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="quienes-somos.html">¿Quiénes somos?</a>
+            <a class="dropdown-item" href="sucursales.html">Sucursales</a>
+
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Productos</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="productos.html">Extras</a>
+
+          </div>
         </li>
       </ul>
     </nav>
-
 
 
 
