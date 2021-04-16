@@ -237,6 +237,9 @@
         border-color: transparent;
         color: #fff !important;
     }
+    .dropdown-item{
+      background-color: rgb(255, 0, 255);
+    }
    .modal-dialog {
       max-width: 400px;
       margin: 30px auto;

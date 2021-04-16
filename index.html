@@ -230,27 +230,45 @@
         border-color: transparent;
         color: #fff !important;
     }
+    .dropdown-item{
+      background-color: rgb(255, 0, 255);
+    }
+    
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <nav class="navbar navbar-expand-sm bg-light fixed-top ">
          <!-- Brand/logo -->
-      <a class="navbar-brand" href="#">
-        <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
-      </a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lista de Precios</a>
+         
+          <!-- Brand/logo -->
+       <a class="navbar-brand" href="index.html">
+         <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
+       </a>
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+           <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
+         </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="quienes-somos.html">¿Quiénes somos?</a>
+            <a class="dropdown-item" href="sucursales.html">Sucursales</a>
+
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="productos.html">Extras</a>
+            <a class="dropdown-item" href="productos1.html">Gran Formato</a>
+            <a class="dropdown-item" href="productos2.html">Offset</a>
+            <a class="dropdown-item" href="productos3.html">Sublimacion</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Productos</a>
-        </li>
-      </ul>
-    </nav>
+         
+       </ul>
+     </nav>
 
     <div class="jumbotron text-center" id='creativos-jt'>
       <br>
@@ -282,7 +300,7 @@
       <br>
       <div class="row ">
         <div class="col">
-          <a href="productos.html">
+          <a href="productos3.html">
             <img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
 
           </a>
@@ -290,7 +308,7 @@
         </div>
 
         <div class="col">
-          <a href="productos.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+          <a href="productos1.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
 
           </a>
           <h3>Gran formato</h3>
@@ -298,7 +316,7 @@
         </div>
 
         <div class="col">
-          <a href="productos.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+          <a href="productos2.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
 
           </a>
           <h3>Offset</h3>
