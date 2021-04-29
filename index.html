@@ -118,28 +118,7 @@
     background-color: #f4511e;
     color: #fff;
   }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
+  
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
@@ -196,7 +175,7 @@
     #creativos-jt {
       width: 100%;
       height: 100vh;
-      background: url("./images/ejemplo.jpg");
+      background: #ffcc00;
       position: relative;
     }
 
@@ -204,13 +183,13 @@
     #footer{
       background: #595959;
       color: #fff;
-      font-size: 10px;
+      font-size: 12px;
     }
     .navbar {
         margin-bottom: 0;
         width: 100%;
         height: 10vh;
-        background: url("./images/ejemplo.jpg");
+        background-color: #ff00a6;
         z-index: 9999;
         border: 0;
         font-size: 12px !important;
@@ -219,8 +198,15 @@
         border-radius: 0;
         font-family: Montserrat, sans-serif;
       }
+      .dropdown-item{
+      background-color:#ff00a6;
+      
+      font-size: 15px;
+    }
     .navbar li a, .navbar .navbar-brand {
-        color: #fff !important;
+        
+        color: #fff;
+        font-size: 15px;
     }
     .navbar-nav li a:hover, .navbar-nav li.active a {
         color: #000 !important;
@@ -230,44 +216,50 @@
         border-color: transparent;
         color: #fff !important;
     }
-    .dropdown-item{
-      background-color: rgb(255, 0, 255);
-      font-size: 5px;
-    }
+    
     
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-expand-sm bg-light fixed-top ">
-         <!-- Brand/logo -->
-         
-          <!-- Brand/logo -->
-       <a class="navbar-brand" href="index.html">
-         <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
-       </a>
+    <nav class="navbar navbar-expand-sm fixed-top ">
+        <!-- Brand/logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
+          </a>
+        <!-- Brand/logo --> 
        <ul class="navbar-nav ml-auto">
-         <li class="nav-item">
-           <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
-         </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" style='font-size:10px;' href="quienes-somos.html">¿Quiénes somos?</a>
-            <a class="dropdown-item" style='font-size:10px;' href="sucursales.html">Sucursales</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:15px;' href="extras.php">Extras</a>
+              <a class="dropdown-item" style='font-size:15px;' href="offset.php">Offset</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gran-formato.php">Gran Formato y Foto</a>
+              <a class="dropdown-item" style='font-size:15px;' href="acero.php">Acero</a>
+              <a class="dropdown-item" style='font-size:15px;' href="aceroinox.php">Acero Inoxidable</a>
+              <a class="dropdown-item" style='font-size:15px;' href="aluminio.php">Aluminio</a>
+              <a class="dropdown-item" style='font-size:15px;' href="carton.php">Cartón</a>
+              <a class="dropdown-item" style='font-size:15px;' href="ceramica.php">Cerámica</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gorras.php">Gorras</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gorras-infantil.php">Gorras Infantil</a>
+              <a class="dropdown-item" style='font-size:15px;' href="mdf.php">MDF</a>
+              <a class="dropdown-item" style='font-size:15px;' href="plastico.php">Plástico</a>
+              <a class="dropdown-item" style='font-size:15px;' href="textiles.php">Textiles</a>
+              <a class="dropdown-item" style='font-size:15px;' href="vidrio.php">Vidrio</a>
+              <a class="dropdown-item" style='font-size:15px;' href="vidrio.php">Peltre</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:15px;' href="quienes-somos.html">¿Quiénes somos?</a>
+              <a class="dropdown-item" style='font-size:15px;' href="sucursales.html">Sucursales</a>
 
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" style='font-size:10px;' href="productos.html">Extras</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos1.html">Gran Formato</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos2.html">Offset</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos3.html">Sublimacion</a>
-          </div>
-        </li>
-         
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style='color:#fff;' href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
+          </li>
        </ul>
      </nav>
 
@@ -295,6 +287,186 @@
       </div>
     </div>
 
+    <div id="productos" class="container-fluid text-center">
+      <br>
+    <h1 style="background-color:#ff00a6; color:#fff;">PRODUCTOS</h1>
+
+    <br>
+    <div class="row ">
+      <div class="col">
+        <a href="acero.php">
+          <img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3 >Acero</h3>
+      </div>
+
+      <div class="col">
+        <a href="acero-inox.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Acero Inoxidable</h3>
+
+      </div>
+
+      <div class="col">
+        <a href="aluminio.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Aluminio</h3>
+
+      </div>
+
+      <div class="col">
+        <a href="plastico.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Plástico</h3>
+
+      </div>
+
+    </div>
+
+
+    <div class="row ">
+      <div class="col">
+        <a href="neopreno.php">
+          <img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3 >Neopreno</h3>
+      </div>
+
+      <div class="col">
+        <a href="mdf.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>MDF</h3>
+
+      </div>
+
+      <div class="col">
+        <a href="carton.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Cartón</h3>
+
+      </div>
+
+      <div class="col">
+        <a href="textiles.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Textiles</h3>
+
+      </div>
+
+    </div>
+
+    <div class="row ">
+      
+      <div class="col">
+        <a href="gorras.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Gorras Adulto</h3>
+
+      </div>
+
+      <div class="col">
+        <a href="gorras-infantil.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Gorras Infantil</h3>
+
+      </div>
+
+      <div class="col">
+        <a href="vidrio.php">
+          <img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3 >Vidrio</h3>
+      </div>
+
+
+      <div class="col">
+        <a href="ceramica.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Cerámica</h3>
+
+      </div>
+
+    </div>
+
+    <div class="row ">
+      <div class="col">
+        <a href="peltre.php">
+          <img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3 >Peltre</h3>
+      </div>
+
+      <div class="col">
+        <a href="gran-formato.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Gran Formato</h3>
+
+      </div>
+
+      <div class="col">
+        <a href="offset.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Offset</h3>
+
+      </div>
+
+      <div class="col">
+        <a href="extras.php"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+        </a>
+        <h3>Extras</h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="contacto" class="container-fluid text-center">
+    <br>
+    <h1 style="background-color:#0080ff; color:#fff;">CONTACTO</h1>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="row ">
+      <div class="col">
+        
+        <a href="quienes-somos.html"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/LOGOclean.png';" src="images/LOGOclean.png" /></a>
+        <h2>¿Quiénes somos?</h2>
+      </div>
+
+     
+
+
+      <div class="col">
+        
+        <a href="sucursales.html"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/LOGOclean.png';"  src="images/LOGOclean.png" /></a>
+        <h2>Sucursales</h2>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+
+
     
 
 
@@ -314,14 +486,27 @@
     <div class="row">
 
         <div class='col'>
+          <div style="background-color: #0080ff;"><br></div>
             <a>
-                SUCURSAL ZAVALETA   -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G, Col. Ex Hacienda Concepción Buena Vista, C.P. 72170. <br> -Teléfonos de Oficina: 222.503.52.69 / 70  WhatsApp: 222 128 6395 <br>  -Correo: publicidadcreativoszavaleta@outlook.com
+                SUCURSAL ZAVALETA <br>
+                -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G, Col. Ex Hacienda Concepción Buena Vista, C.P. 72170. <br> 
+                -Teléfonos de Oficina: 222.503.52.69 / 70 <br> 
+                WhatsApp: 222 128 6395 <br>  -Correo: publicidadcreativoszavaleta@outlook.com
             </a>
+        </div>
+
+        <div class="col">
+          <div style="background-color: #ffcc00;"><br></div>
+          <br>
         </div>
 
         <div class='col'>
             <a>
-                SUCURSAL FORJADORES  -Dirección: Blvd. Forjadores de Puebla #1715, Santiago Momoxpan, C.P. 72700, Cholula, Puebla. <br> -Teléfono de Oficina: (222) 7.62.22.73  WhatsApp: 221 156 4111  <br> -Correo: publicidadcreativos@hotmail.com
+              <div style="background-color: #ff00a6;"><br></div>
+                SUCURSAL FORJADORES <br>
+                -Dirección: Blvd. Forjadores de Puebla #1715, Santiago Momoxpan, C.P. 72700, Cholula, Puebla. <br>
+                 -Teléfono de Oficina: (222) 7.62.22.73 <br>
+                  WhatsApp: 221 156 4111  <br> -Correo: publicidadcreativos@hotmail.com
             </a>
         </div>
 

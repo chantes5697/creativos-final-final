@@ -216,8 +216,8 @@
     .navbar {
         margin-bottom: 0;
         width: 100%;
-        height: 10%;
-        background: url("./images/ejemplo.jpg");
+        height: 10vh;
+        background-color: #ff00a6;
         z-index: 9999;
         border: 0;
         font-size: 12px !important;
@@ -238,8 +238,9 @@
         color: #fff !important;
     }
     .dropdown-item{
-      background-color: rgb(255, 0, 255);
-      font-size: 5px;
+      background-color:#ff00a6;
+      
+      font-size: 15px;
     }
    .modal-dialog {
       max-width: 400px;
@@ -282,34 +283,46 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-expand-sm bg-light  ">
-         <!-- Brand/logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
-      </a>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" style='font-size:10px;' href="quienes-somos.html">¿Quiénes somos?</a>
-            <a class="dropdown-item" style='font-size:10px;' href="sucursales.html">Sucursales</a>
+    <nav class="navbar navbar-expand-sm bg-light fixed-top ">
+        <!-- Brand/logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
+          </a>
+        <!-- Brand/logo --> 
+       <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:15px;' href="extras.php">Extras</a>
+              <a class="dropdown-item" style='font-size:15px;' href="offset.php">Offset</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gran-formato.php">Gran Formato y Foto</a>
+              <a class="dropdown-item" style='font-size:15px;' href="acero.php">Acero</a>
+              <a class="dropdown-item" style='font-size:15px;' href="aceroinox.php">Acero Inoxidable</a>
+              <a class="dropdown-item" style='font-size:15px;' href="aluminio.php">Aluminio</a>
+              <a class="dropdown-item" style='font-size:15px;' href="carton.php">Cartón</a>
+              <a class="dropdown-item" style='font-size:15px;' href="ceramica.php">Cerámica</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gorras.php">Gorras</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gorras-infantil.php">Gorras Infantil</a>
+              <a class="dropdown-item" style='font-size:15px;' href="mdf.php">MDF</a>
+              <a class="dropdown-item" style='font-size:15px;' href="plastico.php">Plástico</a>
+              <a class="dropdown-item" style='font-size:15px;' href="textiles.php">Textiles</a>
+              <a class="dropdown-item" style='font-size:15px;' href="vidrio.php">Vidrio</a>
+              <a class="dropdown-item" style='font-size:15px;' href="vidrio.php">Peltre</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:15px;' href="quienes-somos.html">¿Quiénes somos?</a>
+              <a class="dropdown-item" style='font-size:15px;' href="sucursales.html">Sucursales</a>
 
-          </div>
-        </li>
-       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" style='font-size:10px;' href="productos.html">Extras</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos1.html">Gran Formato</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos2.html">Offset</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos3.html">Sublimacion</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
+          </li>
+       </ul>
+     </nav>
 
 
 
