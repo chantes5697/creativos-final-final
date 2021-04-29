@@ -217,7 +217,7 @@
         margin-bottom: 0;
         width: 100%;
         height: 10vh;
-        background-color: #ff00a6;
+        background-color: #0080ff;
         z-index: 9999;
         border: 0;
         font-size: 12px !important;
@@ -238,7 +238,7 @@
         color: #fff !important;
     }
     .dropdown-item{
-      background-color:#ff00a6;
+      background-color: #0080ff;
       
       font-size: 15px;
     }
@@ -283,7 +283,7 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-expand-sm bg-light fixed-top ">
+    <nav class="navbar navbar-expand-sm  fixed-top ">
         <!-- Brand/logo -->
           <a class="navbar-brand" href="index.html">
             <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
@@ -307,14 +307,16 @@
               <a class="dropdown-item" style='font-size:15px;' href="plastico.php">Plástico</a>
               <a class="dropdown-item" style='font-size:15px;' href="textiles.php">Textiles</a>
               <a class="dropdown-item" style='font-size:15px;' href="vidrio.php">Vidrio</a>
-              <a class="dropdown-item" style='font-size:15px;' href="vidrio.php">Peltre</a>
+              <a class="dropdown-item" style='font-size:15px;' href="peltre.php">Peltre</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" style='font-size:15px;' href="quienes-somos.html">¿Quiénes somos?</a>
-              <a class="dropdown-item" style='font-size:15px;' href="sucursales.html">Sucursales</a>
+              <a class="dropdown-item" style='font-size:15px;' href="index.html#quienes">¿Quiénes somos?</a>
+              <a class="dropdown-item" style='font-size:15px;' href="index.html#sucursales">Sucursales</a>
+              <a class="dropdown-item" style='font-size:15px;' href="index.html#redes">Redes Sociales</a>
+              <a class="dropdown-item" style='font-size:15px;' href="index.html#whatsapp">Sucursales</a>
 
             </div>
           </li>
@@ -328,6 +330,8 @@
 
 
 <div class="container-fluid bg-grey text-center" >
+    <br>
+    <br>
     <h1 style="background-color:#ff00a6; color:#fff;">ACERO</h1>
     <!--AQUI VAN LAS IMAGENES-->
 
