@@ -1,5 +1,5 @@
 <?php
-    $filepath = "images/productos/SUBLIMACION ACERO INOXIDABLE/";
+    $filepath = "images/productos/SUBLIMACION ACERO INOX/";
     $array = preg_grep('~\.(jpg)$~', scandir($filepath));
     $num = count($array);
 	$i = 0;
@@ -297,7 +297,7 @@
               <a class="dropdown-item" style='font-size:15px;' href="offset.php">Offset</a>
               <a class="dropdown-item" style='font-size:15px;' href="gran-formato.php">Gran Formato y Foto</a>
               <a class="dropdown-item" style='font-size:15px;' href="acero.php">Acero</a>
-              <a class="dropdown-item" style='font-size:15px;' href="aceroinox.php">Acero Inoxidable</a>
+              <a class="dropdown-item" style='font-size:15px;' href="acero-inox.php">Acero Inoxidable</a>
               <a class="dropdown-item" style='font-size:15px;' href="aluminio.php">Aluminio</a>
               <a class="dropdown-item" style='font-size:15px;' href="carton.php">Cartón</a>
               <a class="dropdown-item" style='font-size:15px;' href="ceramica.php">Cerámica</a>
