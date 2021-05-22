@@ -118,28 +118,7 @@
     background-color: #f4511e;
     color: #fff;
   }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
+  
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
@@ -196,7 +175,7 @@
     #creativos-jt {
       width: 100%;
       height: 100vh;
-      background: url("./images/ejemplo.jpg");
+      background: #fff;
       position: relative;
     }
 
@@ -204,13 +183,13 @@
     #footer{
       background: #595959;
       color: #fff;
-      font-size: 10px;
+      font-size: 12px;
     }
     .navbar {
         margin-bottom: 0;
         width: 100%;
         height: 10vh;
-        background: url("./images/ejemplo.jpg");
+        background-color: #69bafc;
         z-index: 9999;
         border: 0;
         font-size: 12px !important;
@@ -219,8 +198,15 @@
         border-radius: 0;
         font-family: Montserrat, sans-serif;
       }
+      .dropdown-item{
+      background-color:#69bafc;
+      
+      font-size: 15px;
+    }
     .navbar li a, .navbar .navbar-brand {
-        color: #fff !important;
+        
+        color: #fff;
+        font-size: 15px;
     }
     .navbar-nav li a:hover, .navbar-nav li.active a {
         color: #000 !important;
@@ -230,66 +216,193 @@
         border-color: transparent;
         color: #fff !important;
     }
-    .dropdown-item{
-      background-color: #0080ff;
-      
-      font-size: 15px;
-    }
+    
+	  
+	  
+	  /* SLIDE */
+	  
+	  
+	  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5000s;
+  animation-name: fade;
+  animation-duration: 5000s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-  <nav class="navbar navbar-expand-sm bg-light  ">
-       <!-- Brand/logo -->
-    <a class="navbar-brand" href="#">
-      <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
-    </a>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Lista de Precios</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Productos</a>
-      </li>
-    </ul>
-  </nav>
+  <nav class="navbar navbar-expand-sm fixed-top ">
+        <!-- Brand/logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
+          </a>
+        <!-- Brand/logo --> 
+       <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:15px;' href="extras.php">Extras</a>
+              <a class="dropdown-item" style='font-size:15px;' href="offset.php">Offset</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gran-formato.php">Gran Formato y Foto</a>
+              <a class="dropdown-item" style='font-size:15px;' href="acero.php">Acero</a>
+              <a class="dropdown-item" style='font-size:15px;' href="aceroinox.php">Acero Inoxidable</a>
+              <a class="dropdown-item" style='font-size:15px;' href="aluminio.php">Aluminio</a>
+              <a class="dropdown-item" style='font-size:15px;' href="carton.php">Cartón</a>
+              <a class="dropdown-item" style='font-size:15px;' href="ceramica.php">Cerámica</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gorras.php">Gorras</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gorras-infantil.php">Gorras Infantil</a>
+              <a class="dropdown-item" style='font-size:15px;' href="mdf.php">MDF</a>
+              <a class="dropdown-item" style='font-size:15px;' href="plastico.php">Plástico</a>
+              <a class="dropdown-item" style='font-size:15px;' href="textiles.php">Textiles</a>
+              <a class="dropdown-item" style='font-size:15px;' href="vidrio.php">Vidrio</a>
+              <a class="dropdown-item" style='font-size:15px;' href="peltre.php">Peltre</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:15px;' href="#quien">¿Quiénes somos?</a>
+              <a class="dropdown-item" style='font-size:15px;' href="#sucursales">Sucursales</a>
+              <a class="dropdown-item" style='font-size:15px;' href="#redes">Redes Sociales</a>
+              <a class="dropdown-item" style='font-size:15px;' href="#whatsapp">Comunícate con nosotros</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style='color:#fff;' href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
+          </li>
+       </ul>
+		
+     </nav>
 
 
 
-<div class="container-fluid bg-grey" id='sucursales'>
-  <h1 style="background-color:#0080ff; color:#fff;">SUCURSALES</h1>
-  <br>
-  <div class="row">
-				<div class="col">
-							<div class='direccion' onclick="cambioDir1()" style="background-color:#fff">
-								<a href='#sucursales' style="color: #00b33c;">
-									<strong>SUCURSAL ZAVALETA</strong> <br> -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G,
-									Col. Ex Hacienda Concepción Buena Vista, C.P. 72170.
-									-Teléfonos de Oficina: 222.503.52.69 / 70  WhatsApp: 222 128 6395
-									-Correo: publicidadcreativoszavaleta@outlook.com
-								</a>
-							</div>
-              <br>
-
-							<div class='direccion' onclick="cambioDir2()" style="background-color:#fff">
-								<a href='#sucursales' style="color: #00b33c;">
-									<strong>SUCURSAL FORJADORES</strong> <br>  -Dirección: Blvd. Forjadores de Puebla #1715,
-									Santiago Momoxpan, C.P. 72700, Cholula, Puebla.
-									-Teléfono de Oficina: (222) 7.62.22.73  WhatsApp: 221 156 4111
-									-Correo: publicidadcreativos@hotmail.com
-								</a>
-							</div>
-				</div>
-
-				<div class="col">
-					<iframe id="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63932.15702580432!2d-98.26631972220883!3d19.041957558909957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc703005b7557%3A0x50a1a0af66d6dcf9!2sPlaza%20Santa%20Fe!5e0!3m2!1ses-419!2smx!4v1615923888174!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-				</div>
-	  </div>
-</div>
+<div class="" id='sucursales'>
+	  
+    <br>
+    <div class="row"  style="padding-bottom: 200px; padding-top: 100px; padding-left: 200px;">
+          <div class="col">
+                <div class='direccion' onclick="cambioDir1()" style="background-color:#fff">
+                  <a href='#sucursales' style="color: #69bafd;">
+                    <strong>SUCURSAL ZAVALETA</strong> <br> -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G,
+                    Col. Ex Hacienda Concepción Buena Vista, C.P. 72170.
+                    -Teléfonos de Oficina: 222.503.52.69 / 70  WhatsApp: 222 128 6395
+                    -Correo: publicidadcreativoszavaleta@outlook.com
+                  </a>
+                </div>
+                <br>
+  
+                <div class='direccion' onclick="cambioDir2()" style="background-color:#fff">
+                  <a href='#sucursales' style="color: #dc0785;">
+                    <strong>SUCURSAL FORJADORES</strong> <br>  -Dirección: Blvd. Forjadores de Puebla #1715,
+                    Santiago Momoxpan, C.P. 72700, Cholula, Puebla.
+                    -Teléfono de Oficina: (222) 7.62.22.73  WhatsApp: 221 156 4111
+                    -Correo: publicidadcreativos@hotmail.com
+                  </a>
+                </div>
+          </div>
+  
+          <div class="col">
+            <iframe id="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63932.15702580432!2d-98.26631972220883!3d19.041957558909957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc703005b7557%3A0x50a1a0af66d6dcf9!2sPlaza%20Santa%20Fe!5e0!3m2!1ses-419!2smx!4v1615923888174!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+          </div>
+      </div>
+  </div>
 
 <div class="container-fluid bg-grey" id='redes'>
   <h2>Redes Sociales</h2>

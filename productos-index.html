@@ -118,28 +118,7 @@
     background-color: #f4511e;
     color: #fff;
   }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
+  
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
@@ -196,7 +175,7 @@
     #creativos-jt {
       width: 100%;
       height: 100vh;
-      background: url("./images/ejemplo.jpg");
+      background: #fff;
       position: relative;
     }
 
@@ -204,13 +183,13 @@
     #footer{
       background: #595959;
       color: #fff;
-      font-size: 10px;
+      font-size: 12px;
     }
     .navbar {
         margin-bottom: 0;
         width: 100%;
         height: 10vh;
-        background: url("./images/ejemplo.jpg");
+        background-color: #69bafc;
         z-index: 9999;
         border: 0;
         font-size: 12px !important;
@@ -219,8 +198,15 @@
         border-radius: 0;
         font-family: Montserrat, sans-serif;
       }
+      .dropdown-item{
+      background-color:#69bafc;
+      
+      font-size: 15px;
+    }
     .navbar li a, .navbar .navbar-brand {
-        color: #fff !important;
+        
+        color: #fff;
+        font-size: 15px;
     }
     .navbar-nav li a:hover, .navbar-nav li.active a {
         color: #000 !important;
@@ -230,50 +216,203 @@
         border-color: transparent;
         color: #fff !important;
     }
-    .dropdown-item{
-      background-color: #0080ff;
-      
-      font-size: 15px;
-    }
     
+	  
+	  
+	  /* SLIDE */
+	  
+	  
+	  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5000s;
+  animation-name: fade;
+  animation-duration: 5000s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	  /*SIDE NAV*/
+	  .sidenav {
+  height: 100%;
+  width: 0;
+		  
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #dc0785;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+	text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-expand-sm  fixed-top ">
-         <!-- Brand/logo -->
-         
-          <!-- Brand/logo -->
-       <a class="navbar-brand" href="index.html">
-         <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
-       </a>
+    <nav class="navbar navbar-expand-sm fixed-top ">
+        <!-- Brand/logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
+          </a>
+        <!-- Brand/logo --> 
        <ul class="navbar-nav ml-auto">
-         <li class="nav-item">
-           <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
-         </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" style='font-size:10px;' href="quienes-somos.html">¿Quiénes somos?</a>
-            <a class="dropdown-item" style='font-size:10px;' href="sucursales.html">Sucursales</a>
-
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" style='font-size:10px;' href="productos.html">Extras</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos1.html">Gran Formato</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos2.html">Offset</a>
-            <a class="dropdown-item" style='font-size:10px;' href="productos3.html">Sublimacion</a>
-          </div>
-        </li>
-         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:15px;' href="extras.php">Extras</a>
+              <a class="dropdown-item" style='font-size:15px;' href="offset.php">Offset</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gran-formato.php">Gran Formato y Foto</a>
+              <a class="dropdown-item" style='font-size:15px;' href="acero.php">Acero</a>
+              <a class="dropdown-item" style='font-size:15px;' href="aceroinox.php">Acero Inoxidable</a>
+              <a class="dropdown-item" style='font-size:15px;' href="aluminio.php">Aluminio</a>
+              <a class="dropdown-item" style='font-size:15px;' href="carton.php">Cartón</a>
+              <a class="dropdown-item" style='font-size:15px;' href="ceramica.php">Cerámica</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gorras.php">Gorras</a>
+              <a class="dropdown-item" style='font-size:15px;' href="gorras-infantil.php">Gorras Infantil</a>
+              <a class="dropdown-item" style='font-size:15px;' href="mdf.php">MDF</a>
+              <a class="dropdown-item" style='font-size:15px;' href="plastico.php">Plástico</a>
+              <a class="dropdown-item" style='font-size:15px;' href="textiles.php">Textiles</a>
+              <a class="dropdown-item" style='font-size:15px;' href="vidrio.php">Vidrio</a>
+              <a class="dropdown-item" style='font-size:15px;' href="peltre.php">Peltre</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:15px;' href="#quien">¿Quiénes somos?</a>
+              <a class="dropdown-item" style='font-size:15px;' href="#sucursales">Sucursales</a>
+              <a class="dropdown-item" style='font-size:15px;' href="#redes">Redes Sociales</a>
+              <a class="dropdown-item" style='font-size:15px;' href="#whatsapp">Comunícate con nosotros</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style='color:#fff;' href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
+          </li>
        </ul>
+		
      </nav>
 
    
-
+<!--
     <div id="productos" class="container-fluid text-center">
         <br>
       <br>
@@ -317,15 +456,203 @@
       </div>
     </div>
 
-<!-- Container (About Section) -->
+-->
     
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
 
 
 
 
 
+<!-- Slideshow container -->
+<div style="padding-top: 150px" id="productos" class="container-fluid text-center">
+<div class="slideshow-container">
 
-<!-- Container (Services Section) -->
+
+	<div style="padding-top: 150px;" id="mySidenav" class="sidenav">
+  <a style="padding-top: 90px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="extras.php">Extras</a>
+              <a href="offset.php">Offset</a>
+              <a href="gran-formato.php">Gran Formato y Foto</a>
+              <a href="acero.php">Acero</a>
+              <a href="aceroinox.php">Acero Inoxidable</a>
+              <a href="aluminio.php">Aluminio</a>
+              <a href="carton.php">Cartón</a>
+              <a href="ceramica.php">Cerámica</a>
+              <a href="gorras.php">Gorras</a>
+              <a href="gorras-infantil.php">Gorras Infantil</a>
+              <a href="mdf.php">MDF</a>
+              <a href="plastico.php">Plástico</a>
+              <a href="textiles.php">Textiles</a>
+              <a href="vidrio.php">Vidrio</a>
+              <a href="peltre.php">Peltre</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer; color: #dc0785" onclick="openNav()">&#9776;  PRODUCTOS</span>
+
+	
+	
+	
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 16</div>
+    <a href="acero.php"><img src="images/img1.jpg" style="width:100%"/></a>
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 16</div>
+    <a href="acero-inox.php"><img src="images/img2.jpg" style="width:100%"></a>
+    
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 16</div>
+    <a href="aluminio.php"><img src="images/img3.jpg" style="width:100%"></a>
+    
+  </div>
+	<div class="mySlides fade">
+    <div class="numbertext">4 / 16</div>
+    <a href="plastico.php"><img src="images/img4.jpg" style="width:100%"></a>
+  </div>
+	<!-- segunda fila -->
+	
+	
+<div class="mySlides fade">
+    <div class="numbertext">5 / 16</div>
+    <a href="neopreno.php"><img src="images/img5.jpg" style="width:100%"/></a>
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 16</div>
+    <a href="mdf.php"><img src="images/img6.jpg" style="width:100%"></a>
+    
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 16</div>
+    <a href="carton.php"><img src="images/img7.jpg" style="width:100%"></a>
+    
+  </div>
+	<div class="mySlides fade">
+    <div class="numbertext">8 / 16</div>
+    <a href="textiles.php"><img src="images/img8.jpg" style="width:100%"></a>
+  </div>
+  
+
+<!-- tercer fila -->
+	
+	
+<div class="mySlides fade">
+    <div class="numbertext">9 / 16</div>
+    <a href="gorras.php"><img src="images/img9.jpg" style="width:100%"/></a>
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 16</div>
+    <a href="gorras-infantil.php"><img src="images/img10.jpg" style="width:100%"></a>
+    
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">11 / 16</div>
+    <a href="vidrio.php"><img src="images/img11.jpg" style="width:100%"></a>
+    
+  </div>
+	<div class="mySlides fade">
+    <div class="numbertext">12 / 16</div>
+    <a href="ceramica.php"><img src="images/img12.jpg" style="width:100%"></a>
+  </div>
+ 
+
+<!-- tercer fila -->
+	
+	
+<div class="mySlides fade">
+    <div class="numbertext">13 / 16</div>
+    <a href="peltre.php"><img src="images/img13.jpg" style="width:100%"/></a>
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">14 / 16</div>
+    <a href="gran-formato.php"><img src="images/img14.jpg" style="width:100%"></a>
+    
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">15 / 16</div>
+    <a href="offset.php"><img src="images/img15.jpg" style="width:100%"></a>
+    
+  </div>
+	<div class="mySlides fade">
+    <div class="numbertext">16 / 16</div>
+    <a href="extras.php"><img src="images/img16.jpg" style="width:100%"></a>
+  </div>
+   <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<span class="dot" onclick="currentSlide(7)"></span>
+	<span class="dot" onclick="currentSlide(8)"></span>
+	<span class="dot" onclick="currentSlide(9)"></span>
+	<span class="dot" onclick="currentSlide(10)"></span>
+	<span class="dot" onclick="currentSlide(11)"></span>
+	<span class="dot" onclick="currentSlide(12)"></span>
+	<span class="dot" onclick="currentSlide(13)"></span>
+	<span class="dot" onclick="currentSlide(14)"></span>
+	<span class="dot" onclick="currentSlide(15)"></span>
+	<span class="dot" onclick="currentSlide(16)"></span>
+</div>
+	</div>
+</br></br></br></br></br></br>
+		<script>
+		
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 
 
