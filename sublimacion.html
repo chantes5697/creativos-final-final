@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com -->
-  <title>publicidad creativos</title>
+  <title>publicidad creativos | Sublimación</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
@@ -323,6 +323,47 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+	  /*SIDE NAV*/
+	  .sidenav {
+  height: 100%;
+  width: 0;
+		  
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #dc0785;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+	text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -336,11 +377,10 @@ img {vertical-align: middle;}
        <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" style='font-size:15px;' href="sublimacion.html">Sublimación</a>
+            <div class="dropdown-menu"><a class="dropdown-item" style='font-size:15px;' href="sublimacion.html">Sublimación</a>
               <a class="dropdown-item" style='font-size:15px;' href="offset.php">Offset</a>
               <a class="dropdown-item" style='font-size:15px;' href="gran-formato.php">Gran Formato y Foto</a>
-              <a class="dropdown-item" style='font-size:15px;' href="extras.php">Extras</a>    
+              <a class="dropdown-item" style='font-size:15px;' href="extras.php">Extras</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -359,57 +399,96 @@ img {vertical-align: middle;}
 		
      </nav>
 
-    <div class="jumbotron text-center" id='creativos-jt'>
-		<hr size="20px" style="border-color:#69bafc;">
-      <br>
-      <br>
-      <br>
-		</br>
-	</br>
-	</br>
-      <img class="logo1" src="images/INVERTCHANGE.png" width="300" height="102" alt=""/>
+   
+<!--
+    <div id="productos" class="container-fluid text-center">
         <br>
-		</br>
-        <br>
-		</br>
-	<br>
-		</br>
-<br>
-		</br>
-		
-      <div class='row'>
-          <div class='col'>
-              <a href="contactos-index.html"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/logoSmall.png';" onmouseover="this.src='images/logoC.png';" src="images/logoSmall.png" /></a>
-		    <h2></BR>Contacto</h2>
-          </div>
-          <div class='col'>
-              <a href="productos-index.html"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/logoSmall.png';" onmouseover="this.src='images/logoM.png';" src="images/logoSmall.png" /></a>
-              <h2></BR><b>Productos</b></h2>
-          </div>
-          <div class='col'>
+      <br>
+    <br>
+    <h1 style="background-color:#ff00a6; color:#fff;">PRODUCTOS</h1>
 
-              <a href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/logoSmall.png';" onmouseover="this.src='images/logoY.png';" src="images/logoSmall.png" /></a>
-  /></a>
-              <h2></BR>Lista de Precios</h2>
-          </div>
+      <br>
+      <div class="row ">
+        <div class="col">
+          <a href="productos3.html">
+            <img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+          </a>
+          <h3 >Sublimado</h3>
+        </div>
+
+        <div class="col">
+          <a href="productos1.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+          </a>
+          <h3>Gran formato</h3>
+
+        </div>
+
+        <div class="col">
+          <a href="productos2.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+          </a>
+          <h3>Offset</h3>
+
+        </div>
+
+        <div class="col">
+          <a href="productos.html"><img alt="Cambiar imagen"  height="50" onmouseout="this.src='images/sub1.png';" onmouseover="this.src='images/sub2.png';" src="images/sub1.png" href="who.html"/>
+
+          </a>
+          <h3>Extras</h3>
+
+        </div>
+
       </div>
     </div>
 
-    <div id="productos" class="container-fluid text-center">
-      <br>
-		<hr size="20px" style="border-color:#dc0785;">
-		
-    <h1 style=" background-color:#dc0785; color:#fff;">PRODUCTOS</h1>
-		
-		<hr size="20px" style="border-color:#dc0785;">
-		
-		
-		
-		</br></br></br></br></br></br></br></br>
-		 <!-- Slideshow container -->
+-->
+    
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+
+
+
+
+<!-- Slideshow container -->
+<div style="padding-top: 150px" id="productos" class="container-fluid text-center">
 <div class="slideshow-container">
 
+
+	<div style="padding-top: 150px;" id="mySidenav" class="sidenav">
+  <a style="padding-top: 90px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+              <a href="acero.php">Acero</a>
+              <a href="acero-inox.php">Acero Inoxidable</a>
+              <a href="aluminio.php">Aluminio</a>
+              <a href="carton.php">Cartón</a>
+              <a href="ceramica.php">Cerámica</a>
+              <a href="gorras.php">Gorras</a>
+              <a href="gorras-infantil.php">Gorras Infantil</a>
+              <a href="mdf.php">MDF</a>
+              <a href="plastico.php">Plástico</a>
+              <a href="textiles.php">Textiles</a>
+              <a href="vidrio.php">Vidrio</a>
+              <a href="peltre.php">Peltre</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer; color: #dc0785" onclick="openNav()">&#9776;  PRODUCTOS</span>
+
+	
+	
+	
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 16</div>
@@ -490,20 +569,7 @@ img {vertical-align: middle;}
     
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">14 / 16</div>
-    <a href="gran-formato.php"><img src="images/img14.jpg" style="width:100%"></a>
-    
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">15 / 16</div>
-    <a href="offset.php"><img src="images/img15.jpg" style="width:100%"></a>
-    
-  </div>
-	<div class="mySlides fade">
-    <div class="numbertext">16 / 16</div>
-    <a href="extras.php"><img src="images/img16.jpg" style="width:100%"></a>
-  </div>
+  
    <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -525,10 +591,9 @@ img {vertical-align: middle;}
 	<span class="dot" onclick="currentSlide(11)"></span>
 	<span class="dot" onclick="currentSlide(12)"></span>
 	<span class="dot" onclick="currentSlide(13)"></span>
-	<span class="dot" onclick="currentSlide(14)"></span>
-	<span class="dot" onclick="currentSlide(15)"></span>
-	<span class="dot" onclick="currentSlide(16)"></span>
+	
 </div>
+	</div>
 </br></br></br></br></br></br>
 		<script>
 		
@@ -559,195 +624,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-		
-  
-
-  <div id="contacto" class="container-fluid text-center">
-    <br>
-	  <hr size="20px" style="border-color:#69bafc;">
-    <h1 style="background-color:#69bafd; color:#fff; ">CONTACTO</h1>
-	  <hr size="20px" style="border-color:#69bafc;">
-    <br>
-    <br>
-    <br>
-
-
-    <div class="row " style="padding-top: 250px; padding-bottom: 250px">
-      <div class="col">
-        
-        <a href="#quien"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/logoSmall.png';" onmouseover="this.src='images/logoC.png';" src="images/logoSmall.png"  /></a>
-        <h2></br>¿Quiénes somos?</h2>
-      </div>
-
-      <div class="col">
-        
-        <a href="#sucursales"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/logoSmall.png';" onmouseover="this.src='images/logoM.png';" src="images/logoSmall.png"  /></a>
-        <h2></br>Sucursales</h2>
-      </div>
-
-      <div class="col">
-        
-        <a href="#redes"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/logoSmall.png';" onmouseover="this.src='images/logoY.png';" src="images/logoSmall.png"  /></a>
-        <h2></br>Redes Sociales</h2>
-      </div>
-
-      <div class="col">
-        
-        <a href="#whatsapp"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/logoSmall.png';" onmouseover="this.src='images/logoG.png';" src="images/logoSmall.png"  /></a>
-        <h2></br>Comunícate con nosotros</h2>
-      </div>
-
-    </div>
-    <br>
-    <br>
-    <br>
-  </div>
-
-  <div  id='quien'>
-	  
-    
-
-      <hr size="20px" style="border-color:#dc0785;">
-    <center><h1 style="background-color:#dc0785; color:#fff;">¿QUIÉNES SOMOS?</h1></center>
-	    <hr size="20px" style="border-color:#dc0785;">
-    <br></br></br></BR></BR></BR></BR>
-          <CENTER><div class='row'>
-			
-			
-			<div class="col">
-              <div class="span4">
-                <div class="content-heading">
-					
-                    <img  class="center" src="images/Mision.png" /></br>
-                </div>
-                  
-                    <p style="font-size: 20px;" >
-                        Somos una empresa de máxima confianza para nuestros clientes, capaces
-                          de ofrecer las estrategias necesarias para conseguir sus objetivos a través
-                          de nuestra experiencia.
-                    </p>
-
-              </div>
-			</div>
-          </div></BR></BR></BR></BR></BR>
-<div class='row'>
-			
-			
-			<div class="col">
-              <div class="span4">
-                <div class="content-heading">
-					
-                    <img  class="center" src="images/Vision.png" /></br>
-                </div>
-                  
-                    <p style="font-size: 20px;">
-                         Ser un equipo comprometido capaz de destacar en el mercado por el valor y 
-                      la calidad de los servicios que ofrecemos, esto con la finalidad de brindar las
-                      soluciones necesarias para impulsar a pequeñas y grandes empresas.
-                    </p></BR>
-
-              </div>
-			</div>
-          </div></CENTER>
-
-           
-      
-</div></BR></BR></BR></BR></BR></BR></BR>
-
-  <div class="" id='sucursales'>
-	  <hr size="20px" style="border-color:#69bafc;">
-    <h1 style="background-color:#69bafd; color:#fff;">SUCURSALES</h1>
-	  <hr size="20px" style="border-color:#69bafc;">
-    <br>
-    <div class="row"  style="padding-bottom: 200px; padding-top: 100px">
-          <div class="col">
-                <div class='direccion' onclick="cambioDir1()" style="background-color:#fff">
-                  <a href='#sucursales' style="color: #69bafd;">
-                    <strong>SUCURSAL ZAVALETA</strong> <br> -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G,
-                    Col. Ex Hacienda Concepción Buena Vista, C.P. 72170.
-                    -Teléfonos de Oficina: 222.503.52.69 / 70  WhatsApp: 222 128 6395
-                    -Correo: publicidadcreativoszavaleta@outlook.com
-                  </a>
-                </div>
-                <br>
-  
-                <div class='direccion' onclick="cambioDir2()" style="background-color:#fff">
-                  <a href='#sucursales' style="color: #dc0785;">
-                    <strong>SUCURSAL FORJADORES</strong> <br>  -Dirección: Blvd. Forjadores de Puebla #1715,
-                    Santiago Momoxpan, C.P. 72700, Cholula, Puebla.
-                    -Teléfono de Oficina: (222) 7.62.22.73  WhatsApp: 221 156 4111
-                    -Correo: publicidadcreativos@hotmail.com
-                  </a>
-                </div>
-          </div>
-  
-          <div class="col">
-            <iframe id="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63932.15702580432!2d-98.26631972220883!3d19.041957558909957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc703005b7557%3A0x50a1a0af66d6dcf9!2sPlaza%20Santa%20Fe!5e0!3m2!1ses-419!2smx!4v1615923888174!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  
-          </div>
-      </div>
-  </div>
-  
-  <div class="container-fluid bg-grey" id='whatsapp'>
-    <h2>Comunícate con nosotros</h2>
-    <div style= "padding-top: 100px" class="row text-center">
-          <div class="col">
-            <a href="https://wa.link/nd1kbw">
-              <img alt="WhatsApp" height="50" width='auto' onmouseout="this.src='images/redes-sociales/walogo.png';" onmouseover="this.src='images/redes-sociales/walogo.png';" src="images/redes-sociales/walogo.png" />
-  
-            </a>
-            <h3 >Creativos Forjadores</h3>
-  
-  
-          </div>
-          <div class="col">
-            <a href="https://wa.link/phgdm1/">
-              <img alt="WhatsApp" height="50" width='auto' onmouseout="this.src='images/redes-sociales/walogo.png';" onmouseover="this.src='images/redes-sociales/walogo.png';" src="images/redes-sociales/walogo.png" />
-  
-            </a>
-            <h3 >Creativos Zavaleta</h3>
-  
-  
-          </div>
-    </div>
-  </div>
-
-  <div style= "padding-top: 100px;" class="container-fluid bg-grey" id='redes'>
-    <h2>Redes Sociales</h2>
-    <div class="row text-center">
-          <div class="col">
-            <a href="https://www.facebook.com/PublicidadCreativosPuebla">
-              <img alt="Facebook" height="50" width='auto' onmouseout="this.src='images/redes-sociales/fblogo.png';" onmouseover="this.src='images/redes-sociales/fblogo.png';" src="images/redes-sociales/fblogo.png" />
-  
-            </a>
-            <h3 >Facebook</h3>
-  
-  
-          </div>
-          <div class="col">
-            <a href="https://www.instagram.com/publicidad_creativos/">
-              <img alt="Cambiar imagen"  height="50" width='auto' onmouseout="this.src='images/redes-sociales/instagramlogo.png';" onmouseover="this.src='images/redes-sociales/instagramlogo.png';" src="images/redes-sociales/instagramlogo.png" />
-  
-            </a>
-            <h3>Instagram</h3>
-  
-  </br>  </br>  </br>  </br>
-          </div>
-    </div>
-  </div>
-
-
-
-
-    
-
-
-
-
-
-
-
-<!-- Container (Services Section) -->
 
 
 
@@ -755,34 +631,34 @@ function showSlides(n) {
 
 
 <footer class="container-fluid text-center" id='footer'>
-  <div class="row">
+    <div class="row">
 
-      <div class='col'>
-        <div style="background-color: #0080ff;"><br></div>
-          <a>
-              SUCURSAL ZAVALETA <br>
-              -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G, Col. Ex Hacienda Concepción Buena Vista, C.P. 72170. <br> 
-              -Teléfonos de Oficina: 222.503.52.69 / 70 <br> 
-              WhatsApp: 222 128 6395 <br>  -Correo: publicidadcreativoszavaleta@outlook.com
-          </a>
-      </div>
+        <div class='col'>
+          <div style="background-color: #0080ff;"><br></div>
+            <a>
+                SUCURSAL ZAVALETA <br>
+                -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G, Col. Ex Hacienda Concepción Buena Vista, C.P. 72170. <br> 
+                -Teléfonos de Oficina: 222.503.52.69 / 70 <br> 
+                WhatsApp: 222 128 6395 <br>  -Correo: publicidadcreativoszavaleta@outlook.com
+            </a>
+        </div>
 
-      <div class="col">
-        <div style="background-color: #ffcc00;"><br></div>
-        <br>
-      </div>
+        <div class="col">
+          <div style="background-color: #ffcc00;"><br></div>
+          <br>
+        </div>
 
-      <div class='col'>
-          <a>
-            <div style="background-color: #ff00a6;"><br></div>
-              SUCURSAL FORJADORES <br>
-              -Dirección: Blvd. Forjadores de Puebla #1715, Santiago Momoxpan, C.P. 72700, Cholula, Puebla. <br>
-               -Teléfono de Oficina: (222) 7.62.22.73 <br>
-                WhatsApp: 221 156 4111  <br> -Correo: publicidadcreativos@hotmail.com
-          </a>
-      </div>
+        <div class='col'>
+            <a>
+              <div style="background-color: #ff00a6;"><br></div>
+                SUCURSAL FORJADORES <br>
+                -Dirección: Blvd. Forjadores de Puebla #1715, Santiago Momoxpan, C.P. 72700, Cholula, Puebla. <br>
+                 -Teléfono de Oficina: (222) 7.62.22.73 <br>
+                  WhatsApp: 221 156 4111  <br> -Correo: publicidadcreativos@hotmail.com
+            </a>
+        </div>
 
-  </div>
+    </div>
 </footer>
 
 <script>
