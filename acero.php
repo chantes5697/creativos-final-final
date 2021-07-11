@@ -220,7 +220,7 @@
         background-color: #0080ff;
         z-index: 9999;
         border: 0;
-        font-size: 12px !important;
+        font-size: 18px !important;
         line-height: 1.42857143 !important;
         letter-spacing: 4px;
         border-radius: 0;

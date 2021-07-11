@@ -220,7 +220,7 @@
         background-color: #0080ff;
         z-index: 9999;
         border: 0;
-        font-size: 12px !important;
+        font-size: 18px !important;
         line-height: 1.42857143 !important;
         letter-spacing: 4px;
         border-radius: 0;
@@ -289,25 +289,27 @@
             <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
           </a>
         <!-- Brand/logo --> 
-       <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-            <div class="dropdown-menu"><a class="dropdown-item" style='font-size:15px;' href="sublimacion.html">Sublimación</a>
-              <a class="dropdown-item" style='font-size:15px;' href="offset.php">Offset</a>
-              <a class="dropdown-item" style='font-size:15px;' href="gran-formato.php">Gran Formato y Foto</a>
-              <a class="dropdown-item" style='font-size:15px;' href="extras.php">Extras</a>
+            <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" style='font-size:18px;' href="sublimacion.html">Sublimación</a>
+              <a class="dropdown-item" style='font-size:18px;' href="offset.php">Offset</a>
+              <a class="dropdown-item" style='font-size:18px;' href="gran-formato.php">Gran Formato y Foto</a>
+              <a class="dropdown-item" style='font-size:18px;' href="extras.php">Extras</a>    
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+            <a class="nav-link dropdown-toggle"  style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" style='font-size:15px;' href="quienes-somos.html">¿Quiénes somos?</a>
-              <a class="dropdown-item" style='font-size:15px;' href="sucursales.html">Sucursales</a>
-
+              <a class="dropdown-item" style='font-size:18px;' href="#quien">¿Quiénes somos?</a>
+              <a class="dropdown-item" style='font-size:18px;' href="#sucursales">Sucursales</a>
+              <a class="dropdown-item" style='font-size:18px;' href="#redes">Redes Sociales</a>
+              <a class="dropdown-item" style='font-size:18px;' href="#whatsapp">Comunícate con nosotros</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
+            <a class="nav-link" style='color:#fff;' href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
           </li>
        </ul>
      </nav>
