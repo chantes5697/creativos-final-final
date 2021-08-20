@@ -6,8 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.js"></script>
   <style>
@@ -33,7 +34,7 @@
   .jumbotron {
     background-color: #f4511e;
     color: #fff;
-    padding: 100px 25px;
+    padding: 70px 25px;
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -377,11 +378,13 @@ img {vertical-align: middle;}
 
     <nav class="navbar navbar-expand-sm fixed-top ">
         <!-- Brand/logo -->
-          <a class="navbar-brand" href="index.html">
-            <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
-          </a>
+          
         <!-- Brand/logo --> 
-       <ul class="navbar-nav ml-auto">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" style='color:#fff;' href="index.htmlp">Inicio</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
             <div class="dropdown-menu">
@@ -394,44 +397,53 @@ img {vertical-align: middle;}
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" style='font-size:18px;' href="#quien">¿Quiénes somos?</a>
-              <a class="dropdown-item" style='font-size:18px;' href="#sucursales">Sucursales</a>
-              <a class="dropdown-item" style='font-size:18px;' href="#redes">Redes Sociales</a>
-              <a class="dropdown-item" style='font-size:18px;' href="#whatsapp">Comunícate con nosotros</a>
+              <a class="dropdown-item" style='font-size:18px;' href="index.html#quien">¿Quiénes somos?</a>
+              <a class="dropdown-item" style='font-size:18px;' href="index.html#sucursales">Sucursales</a>
+              <a class="dropdown-item" style='font-size:18px;' href="index.html#redes">Redes Sociales</a>
+              <a class="dropdown-item" style='font-size:18px;' href="index.html#whatsapp">Comunícate con nosotros</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style='color:#fff;' href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
+            <a class="nav-link" style='color:#fff;' href="index.html#whatsapp">Whatsapp</a>
           </li>
-       </ul>
+        </ul>
+
 		
      </nav>
 
     <div class="jumbotron text-center" id='creativos-jt'>
-		<hr size="20px" style="border-color:#69bafc;">
-      <br>
-      <br>
-      <br>
-		  </br>
-      </br>
-      </br>
-      <img class="logo1" src="images/INVERTCHANGE.png" width="auto" height="150" alt=""/>
+	  
+      
+      <img class="logo1" src="images/INVERTCHANGE.png" style="width:40%;"  alt=""/>
         <br>
-		    </br>
+		    <br>
         
 		
       <div class='row'>
         <div class="slideshow-container">
+
           <div class="mySlides1">
-            <a href="#productos"><img src="images/A.png" style="width:100%" ></a>
-          </div>
-        
-          <div class="mySlides1">
-            <a href="#whatsapp"><img src="images/B.png" style="width:100%" ></a>
+            <a href="#whatsapp"><img src="images/B.jpg" style="width:100%; height:auto" ></a>
           </div>
 
           <div class="mySlides1">
-            <a href="#sucursales"><img src="images/sucursales.jpg" style="width:100%" ></a>
+            <a href="sublimacion.html"><img src="images/A.png" style="width:100%; height:auto" ></a>
+          </div>
+
+          <div class="mySlides1">
+            <a href="offset.php"><img src="images/A1.jpg" style="width:100%; height:auto" ></a>
+          </div>
+
+          <div class="mySlides1">
+            <a href="gran-formato.php"><img src="images/A2.jpg" style="width:100%; height:auto" ></a>
+          </div>
+
+          <div class="mySlides1">
+            <a href="extras.php"><img src="images/A3.jpg" style="width:100%; height:auto" ></a>
+          </div>
+
+          <div class="mySlides1">
+            <a href="#sucursales"><img src="images/sucursales.jpg" style="width:100%; height:auto" ></a>
           </div>
         
           
@@ -448,164 +460,16 @@ img {vertical-align: middle;}
       
     </div>
     
-  </br></br></br></br></br></br></br></br>
-</br></br></br></br></br></br></br></br>
-
-    <div id="productos" class="container-fluid text-center">
-      <br>
-		<hr size="20px" style="border-color:#dc0785;">
-		
-    <h1 style=" background-color:#dc0785; color:#fff;">PRODUCTOS</h1>
-		
-		<hr size="20px" style="border-color:#dc0785;">
-		
-		
-		
-		</br></br></br></br></br></br></br></br>
-		 <!-- Slideshow container -->
-
-     <div class="slideshow-container">
-  
-
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides2">
-        <div class="numbertext">1 / 16</div>
-        <a href="acero.php"><img src="images/img1.jpg" style="width:100%"/></a>
-        
-      </div>
+  </br>
     
-      <div class="mySlides2">
-        <div class="numbertext">2 / 16</div>
-        <a href="acero-inox.php"><img src="images/img2.jpg" style="width:100%"></a>
-        
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext">3 / 16</div>
-        <a href="aluminio.php"><img src="images/img3.jpg" style="width:100%"></a>
-        
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext">4 / 16</div>
-        <a href="plastico.php"><img src="images/img4.jpg" style="width:100%"></a>
-      </div>
-      <!-- segunda fila -->
-      
-      
-    <div class="mySlides2">
-        <div class="numbertext">5 / 16</div>
-        <a href="neopreno.php"><img src="images/img5.jpg" style="width:100%"/></a>
-        
-      </div>
-    
-      <div class="mySlides2">
-        <div class="numbertext">6 / 16</div>
-        <a href="mdf.php"><img src="images/img6.jpg" style="width:100%"></a>
-        
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext">7 / 16</div>
-        <a href="carton.php"><img src="images/img7.jpg" style="width:100%"></a>
-        
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext">8 / 16</div>
-        <a href="textiles.php"><img src="images/img8.jpg" style="width:100%"></a>
-      </div>
-      
-    
-    <!-- tercer fila -->
-      
-      
-    <div class="mySlides2">
-        <div class="numbertext">9 / 16</div>
-        <a href="gorras.php"><img src="images/img9.jpg" style="width:100%"/></a>
-        
-      </div>
-    
-      <div class="mySlides2">
-        <div class="numbertext">10 / 16</div>
-        <a href="gorras-infantil.php"><img src="images/img10.jpg" style="width:100%"></a>
-        
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext">11 / 16</div>
-        <a href="vidrio.php"><img src="images/img11.jpg" style="width:100%"></a>
-        
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext">12 / 16</div>
-        <a href="ceramica.php"><img src="images/img12.jpg" style="width:100%"></a>
-      </div>
-     
-    
-    <!-- tercer fila -->
-      
-      
-    <div class="mySlides2">
-        <div class="numbertext">13 / 16</div>
-        <a href="peltre.php"><img src="images/img13.jpg" style="width:100%"/></a>
-        
-      </div>
-    
-      <div class="mySlides2">
-        <div class="numbertext">14 / 16</div>
-        <a href="gran-formato.php"><img src="images/img14.jpg" style="width:100%"></a>
-        
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext">15 / 16</div>
-        <a href="offset.php"><img src="images/img15.jpg" style="width:100%"></a>
-        
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext">16 / 16</div>
-        <a href="extras.php"><img src="images/img16.jpg" style="width:100%"></a>
-      </div>
-    
-      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-    </div>
-    
-<br>
-
-<!-- The dots/circles -->
-
-</br></br></br></br></br></br>
-<script>
-  var slideIndex = [1,1];
-  var slideId = ["mySlides1", "mySlides2"]
-  showSlides(1, 0);
-  showSlides(1, 1);
-
-  function plusSlides(n, no) {
-    showSlides(slideIndex[no] += n, no);
-  }
-
-  function showSlides(n, no) {
-    var i;
-    var x = document.getElementsByClassName(slideId[no]);
-    if (n > x.length) {slideIndex[no] = 1}    
-    if (n < 1) {slideIndex[no] = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slideIndex[no]-1].style.display = "block";  
-  }
-</script>
-
-</div>
 		
   
 
   <div id="contacto" class="container-fluid text-center">
-    <br>
-	  <hr size="20px" style="border-color:#69bafc;">
+	  <hr size="20px" style="border-color:#69bafc; padding-left: 50px; padding-right: 50px;">
     <h1 style="background-color:#69bafd; color:#fff; ">CONTACTO</h1>
-	  <hr size="20px" style="border-color:#69bafc;">
-    
-
-
-    <div class="row " style="padding-top: 250px; padding-bottom: 250px">
+    <hr size="20px" style="border-color:#69bafc; padding-left: 50px; padding-right: 50px;">
+    <div class="row " style="padding-top: 100px; padding-bottom: 100px">
       <div class="col">
         
         <a href="#quien"><img alt="Cambiar imagen" height="100" width='100' onmouseout="this.src='images/logoSmall.png';" onmouseover="this.src='images/logoC.png';" src="images/logoSmall.png"  /></a>
@@ -631,9 +495,7 @@ img {vertical-align: middle;}
       </div>
 
     </div>
-    <br>
-    <br>
-    <br>
+    
   </div>
 
   <div  id='quien' style="padding-left: 50px; padding-right: 50px;">
@@ -643,7 +505,7 @@ img {vertical-align: middle;}
       <hr size="20px" style="border-color:#dc0785;">
     <center><h1 style="background-color:#dc0785; color:#fff;">¿QUIÉNES SOMOS?</h1></center>
 	    <hr size="20px" style="border-color:#dc0785;">
-    <br></br></br></BR></BR></BR></BR>
+    <br>
           <CENTER><div class='row' style="padding-left: 50px; padding-right: 50px;">
 			
 			
@@ -678,48 +540,48 @@ img {vertical-align: middle;}
 
         </div>
 </div>
-          </div></BR></BR></BR></BR></BR>
+          </div>
 
 
            
       
-</div></BR></BR></BR></BR></BR></BR></BR>
+</div>
 
   <div class="" id='sucursales' style="padding-left: 50px; padding-right: 50px;">
 	  <hr size="20px" style="border-color:#69bafc; padding-left: 50px; padding-right: 50px;">
     <h1 style="background-color:#69bafd; color:#fff; padding-left: 50px; padding-right: 50px;">SUCURSALES</h1>
 	  <hr size="20px" style="border-color:#69bafc; padding-left: 50px; padding-right: 50px;">
     <br>
-    <div class="row"  style="padding-bottom: 200px; padding-top: 100px; padding-left: 50px; padding-right: 50px; ">
+    <div class="row"  style="  padding-left: 50px; padding-right: 50px; ">
+          
           <div class="col">
-            <div class='row' >
-              <div class="col">
-                <div class='direccion' onclick="cambioDir1()" style="background-color:#fff">
-                  <a href='#sucursales' style="color: #69bafd;">
-                    <strong>SUCURSAL ZAVALETA</strong> <br> -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G,
-                    Col. Ex Hacienda Concepción Buena Vista, C.P. 72170.
-                    -Teléfonos de Oficina: 222.503.52.69 / 70  WhatsApp: 222 128 6395
-                    -Correo: publicidadcreativoszavaleta@outlook.com
-                  </a>
-                </div>
-                <br>
+            <iframe class='d-flex justify-content-center' id="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63932.15702580432!2d-98.26631972220883!3d19.041957558909957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc703005b7557%3A0x50a1a0af66d6dcf9!2sPlaza%20Santa%20Fe!5e0!3m2!1ses-419!2smx!4v1615923888174!5m2!1ses-419!2smx"   style="border:0; " allowfullscreen="" loading="lazy"></iframe>
+            <div class='direccion d-flex justify-content-center'  style="background-color:#fff">
+              <a href='#sucursales' style="color: #69bafd;">
+                <strong>SUCURSAL ZAVALETA</strong> <br> -Dirección: Camino Real a Cholula, #4405, Plaza Santa Fe Local 1G,
+                Col. Ex Hacienda Concepción Buena Vista, C.P. 72170.
+                -Teléfonos de Oficina: 222.503.52.69 / 70  WhatsApp: 222 128 6395
+                -Correo: publicidadcreativoszavaleta@outlook.com
+              </a>
+            </div>
+            <br>
   
-                <div class='direccion' onclick="cambioDir2()" style="background-color:#fff">
-                  <a href='#sucursales' style="color: #dc0785;">
-                    <strong>SUCURSAL FORJADORES</strong> <br>  -Dirección: Blvd. Forjadores de Puebla #1715,
-                    Santiago Momoxpan, C.P. 72700, Cholula, Puebla.
-                    -Teléfono de Oficina: (222) 7.62.22.73  WhatsApp: 221 156 4111
-                    -Correo: publicidadcreativos@hotmail.com
-                  </a>
-                </div>
+                
           </div>
   
           <div class="col">
-            <iframe id="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63932.15702580432!2d-98.26631972220883!3d19.041957558909957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc703005b7557%3A0x50a1a0af66d6dcf9!2sPlaza%20Santa%20Fe!5e0!3m2!1ses-419!2smx!4v1615923888174!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  
-          </div>
+            
+            <iframe class='d-flex justify-content-center' id="myFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.714706350912!2d-98.28140538578731!3d19.076277156922583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc77608cb6519%3A0x35f30630d1d599c!2sBlvd.%20Forjadores%20de%20Puebla%201715%2C%20Santiago%20Momoxpan%2C%20Geovillas%20el%20Campanario%20Secc%20II%2C%2072760%20Puebla%2C%20Pue.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1615935747908!5m2!1ses-419!2sus"  style="border:0; " allowfullscreen="" loading="lazy"></iframe>
+            <div class='direccion d-flex justify-content-center'  style="background-color:#fff">
+              <a href='#sucursales' style="color: #dc0785;">
+                <strong>SUCURSAL FORJADORES</strong> <br>  -Dirección: Blvd. Forjadores de Puebla #1715,
+                Santiago Momoxpan, C.P. 72700, Cholula, Puebla.
+                -Teléfono de Oficina: (222) 7.62.22.73  WhatsApp: 221 156 4111
+                -Correo: publicidadcreativos@hotmail.com
+              </a>
             </div>
           </div>
+            
       </div>
   </div>
   
@@ -728,7 +590,7 @@ img {vertical-align: middle;}
     <div style= "padding-top: 100px" class="row text-center">
           <div class="col">
             <a href="https://wa.link/nd1kbw">
-              <img alt="WhatsApp" height="50" width='auto' onmouseout="this.src='images/redes-sociales/walogo.png';" onmouseover="this.src='images/redes-sociales/walogo.png';" src="images/redes-sociales/walogo.png" />
+              <img alt="WhatsApp" height="50" width='auto'  src="images/redes-sociales/whatsapp.png" />
   
             </a>
             <h3 >Creativos Forjadores</h3>
@@ -737,7 +599,7 @@ img {vertical-align: middle;}
           </div>
           <div class="col">
             <a href="https://wa.link/phgdm1/">
-              <img alt="WhatsApp" height="50" width='auto' onmouseout="this.src='images/redes-sociales/walogo.png';" onmouseover="this.src='images/redes-sociales/walogo.png';" src="images/redes-sociales/walogo.png" />
+              <img alt="WhatsApp" height="50" width='auto' src="images/redes-sociales/whatsapp.png" />
   
             </a>
             <h3 >Creativos Zavaleta</h3>
@@ -819,6 +681,28 @@ img {vertical-align: middle;}
 
   </div>
 </footer>
+
+<script>
+  var slideIndex = [1,1];
+  var slideId = ["mySlides1", "mySlides2"]
+  showSlides(1, 0);
+  
+
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+
+  function showSlides(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+  }
+</script>
 
 <script>
 $(document).ready(function(){
