@@ -289,7 +289,7 @@
             <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
           </a>
         <!-- Brand/logo --> 
-       <ul class="navbar-nav ml-auto">
+       <ul class="navbar-nav ml-auto" style='background-color:#0080ff;'>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
             <div class="dropdown-menu"><a class="dropdown-item" style='font-size:15px;' href="sublimacion.html">Sublimación</a>
