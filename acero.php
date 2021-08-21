@@ -12,14 +12,14 @@
   <title> publicidad creativos | Acero</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.js"></script>
   <style>
   body {
-    font: 400 15px Lato, sans-serif;
+    font: 400 15px 'Roboto Condensed', sans-serif;
     line-height: 1.8;
     color: #818181;
   }
@@ -41,7 +41,7 @@
     background-color: #f4511e;
     color: #fff;
     padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   .container-fluid {
     padding: 60px 50px;
@@ -134,7 +134,7 @@
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
@@ -196,7 +196,7 @@
     }
   }
   body {
-        font: 400 15px Lato, sans-serif;
+        font: 400 15px 'Roboto Condensed', sans-serif;
         line-height: 1.8;
         color: #818181;
     }
@@ -224,7 +224,7 @@
         line-height: 1.42857143 !important;
         letter-spacing: 4px;
         border-radius: 0;
-        font-family: Montserrat, sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
       }
     .navbar li a, .navbar .navbar-brand {
         color: #fff !important;

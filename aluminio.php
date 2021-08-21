@@ -12,14 +12,14 @@
   <title> publicidad creativos | Aluminio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.js"></script>
   <style>
   body {
-    font: 400 15px Lato, sans-serif;
+    font: 400 15px 'Roboto Condensed', sans-serif;
     line-height: 1.8;
     color: #818181;
   }
@@ -41,7 +41,7 @@
     background-color: #f4511e;
     color: #fff;
     padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   .container-fluid {
     padding: 60px 50px;
@@ -134,7 +134,7 @@
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
@@ -196,7 +196,7 @@
     }
   }
   body {
-        font: 400 15px Lato, sans-serif;
+        font: 400 15px 'Roboto Condensed', sans-serif;
         line-height: 1.8;
         color: #818181;
     }
@@ -224,7 +224,7 @@
         line-height: 1.42857143 !important;
         letter-spacing: 4px;
         border-radius: 0;
-        font-family: Montserrat, sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
       }
     .navbar li a, .navbar .navbar-brand {
         color: #fff !important;
@@ -286,7 +286,7 @@
     
         
         <nav class="navbar navbar-expand-lg ">
-          <a href="index.html"><img src="images/LOGO CREATIVOS invert.png" style="width: 15% ; height: auto;" alt=""></a>
+          <a href="index.html"><img src="images/LOGO CREATIVOS invert.png" style="width: 25% ; height: auto;" alt=""></a>
           <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -297,21 +297,21 @@
                 <a class="nav-link" style='color:#fff;' href="index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" style='font-size:18px;' href="sublimacion.html">Sublimación</a>
-                  <a class="dropdown-item" style='font-size:18px;' href="offset.php">Offset</a>
-                  <a class="dropdown-item" style='font-size:18px;' href="gran-formato.php">Gran Formato y Foto</a>
-                  <a class="dropdown-item" style='font-size:18px;' href="extras.php">Extras</a>    
-                </div>
-              </li>
-              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle"  style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" style='font-size:18px;' href="index.html#quien">¿Quiénes somos?</a>
                   <a class="dropdown-item" style='font-size:18px;' href="index.html#sucursales">Sucursales</a>
                   <a class="dropdown-item" style='font-size:18px;' href="index.html#redes">Redes Sociales</a>
                   <a class="dropdown-item" style='font-size:18px;' href="index.html#whatsapp">Comunícate con nosotros</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" style='font-size:18px;' href="sublimacion.html">Sublimación</a>
+                  <a class="dropdown-item" style='font-size:18px;' href="offset.php">Offset</a>
+                  <a class="dropdown-item" style='font-size:18px;' href="gran-formato.php">Gran Formato y Foto</a>
+                  <a class="dropdown-item" style='font-size:18px;' href="extras.php">Extras</a>    
                 </div>
               </li>
               <li class="nav-item">
