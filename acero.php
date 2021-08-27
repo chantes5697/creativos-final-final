@@ -12,9 +12,13 @@
   <title> publicidad creativos | Acero</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.js"></script>
   <style>
@@ -283,36 +287,42 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-expand-sm  fixed-top ">
-        <!-- Brand/logo -->
-          <a class="navbar-brand" href="index.html">
-            <img src="images/LOGO CREATIVOS invert.png" alt="logo" style="height:60px; width: auto;">
-          </a>
-        <!-- Brand/logo --> 
-       <ul class="navbar-nav ml-auto" style='background-color:#0080ff;'>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
-            <div class="dropdown-menu"><a class="dropdown-item" style='font-size:15px;' href="sublimacion.html">Sublimación</a>
-              <a class="dropdown-item" style='font-size:15px;' href="offset.php">Offset</a>
-              <a class="dropdown-item" style='font-size:15px;' href="gran-formato.php">Gran Formato y Foto</a>
-              <a class="dropdown-item" style='font-size:15px;' href="extras.php">Extras</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" style='font-size:15px;' href="index.html#quienes">¿Quiénes somos?</a>
-              <a class="dropdown-item" style='font-size:15px;' href="index.html#sucursales">Sucursales</a>
-              <a class="dropdown-item" style='font-size:15px;' href="index.html#redes">Redes Sociales</a>
-              <a class="dropdown-item" style='font-size:15px;' href="index.html#whatsapp">Sucursales</a>
-
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pdfs/LISTA DE PRECIOS SUBLIMACION REVENDEDOR1.pdf">Lista de Precios</a>
-          </li>
-       </ul>
-     </nav>
+<nav class="navbar navbar-expand-lg ">
+          <a href="index.html"><img src="images/LOGO CREATIVOS invert.png" style="width: 25% ; height: auto;" alt=""></a>
+          <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style='background-color:#0080ff;'>
+              <li class="nav-item">
+                <a class="nav-link" style='color:#fff;' href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+                <div class="dropdown-menu">
+            <a class="dropdown-item" style='font-size:18px;' href="index.html#quien" target="_blank">¿Quiénes somos?</a>
+            <a class="dropdown-item" style='font-size:18px;' href="index.html#sucursales" target="_blank">Sucursales</a>
+            <a class="dropdown-item" style='font-size:18px;' href="index.html#redes" target="_blank">Redes Sociales</a>
+            <a class="dropdown-item" style='font-size:18px;' href="index.html#whatsapp" target="_blank">Comunícate con nosotros</a>
+          </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style='color:#fff;' data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" style='font-size:18px;' href="sublimacion.html">Sublimación</a>
+                  <a class="dropdown-item" style='font-size:18px;' href="offset.php">Offset</a>
+                  <a class="dropdown-item" style='font-size:18px;' href="gran-formato.php">Gran Formato y Foto</a>
+                  <a class="dropdown-item" style='font-size:18px;' href="extras.php">Extras</a>    
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style='color:#fff;' href="index.html#whatsapp">Whatsapp</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
 
 
 
